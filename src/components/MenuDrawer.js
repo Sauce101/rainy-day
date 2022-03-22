@@ -65,7 +65,11 @@ export default function MenuDrawer() {
     <div>
       {['right'].map(anchor => (
         <React.Fragment key={anchor}>
-          <Button sx={{ color: 'white' }} onClick={toggleDrawer(anchor, true)}>
+          <Button
+            aria-label="Menu"
+            sx={{ color: 'white' }}
+            onClick={toggleDrawer(anchor, true)}
+          >
             {/* {anchor} */}
             <MenuIcon />
           </Button>
