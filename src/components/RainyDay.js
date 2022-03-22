@@ -72,7 +72,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="background.paper" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="http://localhost:3000/">
+      <Link color="inherit" href="https://rainydayipa.netlify.app/">
         Rainy Day IPA
       </Link>{' '}
       {new Date().getFullYear()}
