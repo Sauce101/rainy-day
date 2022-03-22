@@ -1,9 +1,6 @@
 {
-  "name": "Rainy Day IPA",
   "short_name": "Rainy Day IPA",
-  "start_url": ".",
-  "display": "standalone",
-  "background_color": "#fff",
+  "name": "Rainy Day IPA",
   "description": "Rainy Day IPA beer and ale app.",
   "icons": [{
     "src":"android-chrome-192x192.png",
@@ -15,6 +12,9 @@
     "sizes":"512x512",
     "type":"image/png",
     "purpose": "any maskable"
-  }], 
+  }],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",   
   "theme_color":"#305b52"
 }
