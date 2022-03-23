@@ -124,7 +124,8 @@ export default function RainyDay() {
         component="footer"
       >
         <Typography
-          variant="h6"
+          variant="h5"
+          component="h3"
           align="center"
           gutterBottom
           sx={{ fontFamily: "'Rye', cursive" }}
