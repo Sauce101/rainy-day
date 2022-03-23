@@ -124,11 +124,13 @@ export default function RainyDay() {
         component="footer"
       >
         <Typography
-          variant="h5"
-          component="h3"
+          variant="subtitle1"
+          component="p"
           align="center"
-          gutterBottom
-          sx={{ fontFamily: "'Rye', cursive" }}
+          sx={{
+            fontFamily: "'Rye', cursive",
+            fontSize: '1.6rem',
+          }}
           color="#eeeeee"
         >
           Rainy Day Ale
