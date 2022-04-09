@@ -1,6 +1,6 @@
 # Rainy Day IPA
 
-This project was created for fun and pracice with Material UI.
+This project was created for fun and practice with Material UI.
 
 ## Craft Ale of Rancho Cucamonga, CA
 
