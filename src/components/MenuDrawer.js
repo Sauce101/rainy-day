@@ -40,18 +40,18 @@ export default function MenuDrawer() {
       <List>
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>
+            <ListItemIcon sx={{ color: 'white' }}>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}
       </List>
-      <Divider />
+      <Divider sx={{ color: 'white' }} />
       <List>
         {['All mail', 'Trash', 'Spam'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>
+            <ListItemIcon sx={{ color: 'white' }}>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon>
             <ListItemText primary={text} />
@@ -77,6 +77,13 @@ export default function MenuDrawer() {
             anchor={anchor}
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}
+            PaperProps={{
+              sx: {
+                // width: 100,
+                color: 'white',
+                backgroundColor: '#305b52',
+              },
+            }}
           >
             {list(anchor)}
           </Drawer>

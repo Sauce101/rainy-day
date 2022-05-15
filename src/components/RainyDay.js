@@ -4,7 +4,7 @@ import {
   AppBar,
   Box,
   CssBaseline,
-  Container,
+  // Container,
   Link,
   Toolbar,
   Typography,
@@ -34,7 +34,7 @@ function HeroSection() {
         backgroundSize: 'cover',
       }}
     >
-      <Container
+      {/* <Container
         component="main"
         sx={{ color: 'rgba(0, 0, 0, 0.2)' }}
         maxWidth="sm"
@@ -47,7 +47,7 @@ function HeroSection() {
         >
           Rainy Day IPA
         </Typography>
-      </Container>
+      </Container> */}
     </Box>
   )
 }
