@@ -4,7 +4,6 @@ import {
   AppBar,
   Box,
   CssBaseline,
-  // Container,
   Link,
   Toolbar,
   Typography,
@@ -71,11 +70,11 @@ function Beers() {
 function Copyright() {
   return (
     <Typography variant="body2" color="background.paper" align="center">
-      {'Copyright © '}
+      {'© 2022 '}
       <Link color="inherit" href="https://rainydayipa.netlify.app/">
         Rainy Day IPA
       </Link>{' '}
-      {new Date().getFullYear()}
+      {/* {new Date().getFullYear()} */}
       {'.'}
     </Typography>
   )
