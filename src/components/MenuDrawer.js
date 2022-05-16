@@ -32,12 +32,36 @@ export default function MenuDrawer() {
 
   const BREWERY = [
     {
-      href: 'https://www.russianriverbrewing.com/pliny-the-elder/',
-      primary: 'Russian River',
+      href: 'https://www.tgbrews.com/',
+      primary: 'T G Brews',
     },
     {
-      href: 'https://www.stonebrewing.com/blog-tags/arrogant-bastard-ale#ageGatePassed',
-      primary: 'Stone',
+      href: 'https://www.3floyds.com/',
+      primary: '3 Floyds',
+    },
+    {
+      href: 'http://perennialbeer.com/',
+      primary: 'Perennial',
+    },
+    {
+      href: 'https://www.cigarcitybrewing.com/',
+      primary: 'Cigar City',
+    },
+    {
+      href: 'https://alchemistbeer.com/',
+      primary: 'Alchemist',
+    },
+    {
+      href: 'https://anchoragebrewing.company/',
+      primary: 'Anchorage',
+    },
+    {
+      href: 'https://treehousebrew.com/',
+      primary: 'Tree House',
+    },
+    {
+      href: 'https://www.russianriverbrewing.com/pliny-the-elder/',
+      primary: 'Russian River',
     },
     {
       href: 'https://www.greenflashbrew.com/',
