@@ -83,6 +83,7 @@ export default function MenuDrawer() {
           <ListItem disablePadding key={index}>
             <ListItemButton
               component="a"
+              target="_blank"
               rel="noopener noreferrer"
               href={beer.href}
             >
