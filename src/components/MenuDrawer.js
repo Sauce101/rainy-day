@@ -7,9 +7,9 @@ import Divider from '@mui/material/Divider'
 import ListItem from '@mui/material/ListItem'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
-import InboxIcon from '@mui/icons-material/MoveToInbox'
-import MailIcon from '@mui/icons-material/Mail'
 import MenuIcon from '@mui/icons-material/Menu'
+import FactoryIcon from '@mui/icons-material/Factory'
+import ListItemButton from '@mui/material/ListItemButton'
 
 export default function MenuDrawer() {
   const [state, setState] = React.useState({
@@ -30,14 +30,33 @@ export default function MenuDrawer() {
     setState({ ...state, [anchor]: open })
   }
 
+  const BREWERY = [
+    {
+      href: 'https://www.russianriverbrewing.com/pliny-the-elder/',
+      primary: 'Russian River',
+    },
+    {
+      href: 'https://www.stonebrewing.com/blog-tags/arrogant-bastard-ale#ageGatePassed',
+      primary: 'Stone',
+    },
+    {
+      href: 'https://www.greenflashbrew.com/',
+      primary: 'Green Flash',
+    },
+    {
+      href: 'https://northcoastbrewing.com/',
+      primary: 'North Coast',
+    },
+  ]
+
   const list = anchor => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      sx={{ width: anchor === 'top' || anchor === 'right' ? 'auto' : 250 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
+      {/* <List>
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon sx={{ color: 'white' }}>
@@ -47,7 +66,7 @@ export default function MenuDrawer() {
           </ListItem>
         ))}
       </List>
-      <Divider sx={{ color: 'white' }} />
+      <Divider />
       <List>
         {['All mail', 'Trash', 'Spam'].map((text, index) => (
           <ListItem button key={text}>
@@ -58,6 +77,24 @@ export default function MenuDrawer() {
           </ListItem>
         ))}
       </List>
+      <Divider /> */}
+      <List>
+        {BREWERY.map((beer, index) => (
+          <ListItem disablePadding key={index}>
+            <ListItemButton
+              component="a"
+              rel="noopener noreferrer"
+              href={beer.href}
+            >
+              <ListItemIcon sx={{ color: 'white' }}>
+                <FactoryIcon />
+              </ListItemIcon>
+              <ListItemText primary={beer.primary} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
     </Box>
   )
 
